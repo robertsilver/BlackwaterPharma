@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<siteMap xmlns="http://schemas.microsoft.com/AspNet/SiteMap-File-1.0" >
+	<siteMapNode url="~/Default.htm" title="Home">
+		<siteMapNode url="~/Default.aspx" title="Pharmacy">
+			<siteMapNode url="~/Opening.aspx" title="Opening Hours" />
+			<siteMapNode url="~/Services.aspx" title="Services" />
+			<siteMapNode url="~/Consultations.aspx" title="Consultations" />
+			<siteMapNode url="~/Medicine_Old_Returnof01.aspx" title="Old Medicine" />
+			<siteMapNode url="~/Medicine_Old_Returnof02.aspx" title="Old Medicine" />
+			<siteMapNode url="~/Medicine_Storage.aspx" title="Medicine Storage" />
+		</siteMapNode>
+		<siteMapNode url="~/HealthHome.aspx" title="Health Online">
+			<siteMapNode url="~/HealthLinks.aspx" title="Health Links" />
+			<siteMapNode url="~/HealthSelfHelp.aspx" title="Self Help" />
+			<siteMapNode url="~/Health_Medichest.aspx" title="Medicine Health Chest" />
+		</siteMapNode>
+		<siteMapNode url="~/FindUs.aspx" title="Find Us">
+			<siteMapNode url="~/Background.aspx" title="Background" />
+		</siteMapNode>
+  </siteMapNode>
+</siteMap>

@@ -1,0 +1,44 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="NotFound.master.cs" Inherits="NotFound" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title></title>
+    <link rel="stylesheet" type="text/css" href="CSS/tabs.css" />
+	<link rel="stylesheet" type="text/css" href="CSS/Main.css" />
+    <asp:ContentPlaceHolder id="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server">
+    	<div id="container">
+		<div id="header">
+			<div id="logo">
+				<table>
+					<tr>
+						<td style="text-align: left; vertical-align: bottom; width: 50%">
+							<img alt="Blackwater Pharma" src="Images/nhs-services-logo-small.gif" />
+						</td>
+						<td style="text-align: right; width: 50%">
+							<img alt="Blackwater Pharma" src="Images/BigPharma_Logo.jpg" />
+						</td>
+					</tr>
+				</table>
+				<table class="bar">
+					<tr>
+						<td class="HeaderBarText">
+							Providing Prescription Medicines, Advice & Healthcare at :: <span class="HeaderBarOrangeText">
+								Maldon 01621 855118</span>
+						</td>
+					</tr>
+				</table>
+			</div>
+		</div>
+        <asp:ContentPlaceHolder id="ContentPlaceHolder1" runat="server">
+        
+        </asp:ContentPlaceHolder>
+    </div>
+    </form>
+</body>
+</html>

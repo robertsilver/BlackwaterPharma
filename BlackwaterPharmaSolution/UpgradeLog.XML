@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?><?xml-stylesheet type='text/xsl' href='_UpgradeReport_Files/UpgradeReport.xslt'?><UpgradeLog>
+<Properties><Property Name="Solution" Value="BlackwaterPharma">
+</Property><Property Name="Solution File" Value="C:\Users\roberts.ANGLIA\Documents\Anglia\Projects\BlackwaterPharmaSolution\BlackwaterPharma.sln">
+</Property><Property Name="Date" Value="20 April 2010">
+</Property><Property Name="Time" Value="13:46">
+</Property></Properties><Event ErrorLevel="0" Project="BPBusinessEngine" Source="BPBusinessEngine\BPBusinessEngine.csproj" Description="Project converted successfully">
+</Event><Event ErrorLevel="3" Project="BPBusinessEngine" Source="BPBusinessEngine\BPBusinessEngine.csproj" Description="Converted">
+</Event><Event ErrorLevel="0" Project="BPDBEngine" Source="BPDBEngine\BPDBEngine.csproj" Description="Project converted successfully">
+</Event><Event ErrorLevel="3" Project="BPDBEngine" Source="BPDBEngine\BPDBEngine.csproj" Description="Converted">
+</Event><Event ErrorLevel="0" Project="AngliaTemplate" Source="AngliaTemplate\AngliaTemplate.csproj" Description="Project converted successfully">
+</Event><Event ErrorLevel="3" Project="AngliaTemplate" Source="AngliaTemplate\AngliaTemplate.csproj" Description="Converted">
+</Event><Event ErrorLevel="0" Project="" Source="BlackwaterPharma.sln" Description="Solution converted successfully">
+</Event><Event ErrorLevel="3" Project="" Source="BlackwaterPharma.sln" Description="Converted">
+</Event><Event ErrorLevel="0" Project="BPBusinessEngine" Source="BPBusinessEngine\BPBusinessEngine.csproj" Description="Scan complete: Upgrade not required for project files.">
+</Event><Event ErrorLevel="0" Project="BPDBEngine" Source="BPDBEngine\BPDBEngine.csproj" Description="Scan complete: Upgrade not required for project files.">
+</Event><Event ErrorLevel="0" Project="AngliaTemplate" Source="AngliaTemplate\AngliaTemplate.csproj" Description="Scan complete: Upgrade not required for project files.">
+</Event></UpgradeLog>

@@ -1,0 +1,17 @@
+﻿To: Blackwater Pharmacy<br/><br/>
+
+<u><strong>Re: Prescription request</strong></u><br/><br/>
+
+Below is a patient's repeat prescritption request<br/><br/>
+
+Patient's Name: <FName> <LName><br/>
+<u>Patient's Address:</u><br/> 
+<Address1><br/>
+<Address2>
+<City><br/>
+<County><br/>
+<PCode><br/><br/>
+Patient's Telephone: <Phone><br/><br/>
+Patient's Email: <PEmail><br/>
+<u><strong>Prescription Request</strong></u><br/>
+<Prescription>
