@@ -1,0 +1,58 @@
+<%@ Master Language="C#" AutoEventWireup="true" CodeFile="Pharma.master.cs" Inherits="Pharma" %>
+
+<%@ Register Assembly="AjaxControlToolkit" Namespace="AjaxControlToolkit" TagPrefix="cc1" %>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+	<title></title>
+	<link rel="stylesheet" type="text/css" href="CSS/tabs.css" />
+	<link rel="stylesheet" type="text/css" href="CSS/Main.css" />
+	<asp:ContentPlaceHolder ID="head" runat="server">
+	</asp:ContentPlaceHolder>
+</head>
+<body id="recipes">
+	<form id="form1" runat="server">
+	<div id="container">
+		<div id="header">
+			<div id="logo">
+				<table>
+					<tr>
+						<td style="text-align: left; vertical-align: bottom; width: 50%">
+							<img alt="Blackwater Pharma" src="Images/nhs-services-logo-small.gif" />
+						</td>
+						<td style="text-align: right; width: 50%">
+							<img alt="Blackwater Pharma" src="Images/BigPharma_Logo.jpg" />
+						</td>
+					</tr>
+				</table>
+				<table class="bar">
+					<tr>
+						<td class="HeaderBarText">
+							Providing Prescription Medicines, Advice & Healthcare at :: <span class="HeaderBarOrangeText">
+						Maldon 08444-996635</span>
+						</td>
+					</tr>
+				</table>
+			</div>
+		</div>
+		<div id="TopNav">
+			<asp:Repeater ID="repTabs" runat="server">
+				<HeaderTemplate>
+					<ul id="tabnav">
+				</HeaderTemplate>
+				<ItemTemplate>
+					<li><a href='<%#DataBinder.Eval(Container.DataItem, "URL")%>'>
+						<%# DataBinder.Eval(Container.DataItem, "Text") %></a></li>
+				</ItemTemplate>
+				<FooterTemplate>
+					</ul></FooterTemplate>
+			</asp:Repeater>
+		</div>
+		<div id="middle-column">
+			<asp:ContentPlaceHolder ID="ContentPlaceHolder2" runat="server">
+			</asp:ContentPlaceHolder>
+		</div>
+	</div>
+	</form>
+</body>
+</html>

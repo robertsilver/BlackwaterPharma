@@ -1,0 +1,65 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Web Developer Express 2010
+Project("{E24C65DC-7377-472B-9ABA-BC803B73C61A}") = "BlackwaterPharma", "..\BlackwaterPharma\", "{856F53FB-0128-444C-A0E6-CACAF33C4BE4}"
+	ProjectSection(WebsiteProperties) = preProject
+		TargetFrameworkMoniker = ".NETFramework,Version%3Dv3.5"
+		ProjectReferences = "{4F679E76-DA7B-4918-AF34-5702591BB6D2}|AngliaTemplate.dll;{3BA26FD8-7547-4DFB-B396-DA893E6AB5A5}|BPBusinessEngine.dll;{EFEA8D73-D4E5-45CF-91FB-36BF4FA93473}|BPDBEngine.dll;"
+		Debug.AspNetCompiler.VirtualPath = "/BlackwaterPharma"
+		Debug.AspNetCompiler.PhysicalPath = "..\BlackwaterPharma\"
+		Debug.AspNetCompiler.TargetPath = "PrecompiledWeb\BlackwaterPharma\"
+		Debug.AspNetCompiler.Updateable = "true"
+		Debug.AspNetCompiler.ForceOverwrite = "true"
+		Debug.AspNetCompiler.FixedNames = "false"
+		Debug.AspNetCompiler.Debug = "True"
+		Release.AspNetCompiler.VirtualPath = "/BlackwaterPharma"
+		Release.AspNetCompiler.PhysicalPath = "..\BlackwaterPharma\"
+		Release.AspNetCompiler.TargetPath = "PrecompiledWeb\BlackwaterPharma\"
+		Release.AspNetCompiler.Updateable = "true"
+		Release.AspNetCompiler.ForceOverwrite = "true"
+		Release.AspNetCompiler.FixedNames = "false"
+		Release.AspNetCompiler.Debug = "False"
+		VWDPort = "50885"
+		DefaultWebSiteLanguage = "Visual C#"
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BPBusinessEngine", "BPBusinessEngine\BPBusinessEngine.csproj", "{3BA26FD8-7547-4DFB-B396-DA893E6AB5A5}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BPDBEngine", "BPDBEngine\BPDBEngine.csproj", "{EFEA8D73-D4E5-45CF-91FB-36BF4FA93473}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AngliaTemplate", "AngliaTemplate\AngliaTemplate.csproj", "{4F679E76-DA7B-4918-AF34-5702591BB6D2}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{856F53FB-0128-444C-A0E6-CACAF33C4BE4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{856F53FB-0128-444C-A0E6-CACAF33C4BE4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{856F53FB-0128-444C-A0E6-CACAF33C4BE4}.Release|Any CPU.ActiveCfg = Debug|Any CPU
+		{856F53FB-0128-444C-A0E6-CACAF33C4BE4}.Release|Any CPU.Build.0 = Debug|Any CPU
+		{3BA26FD8-7547-4DFB-B396-DA893E6AB5A5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3BA26FD8-7547-4DFB-B396-DA893E6AB5A5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3BA26FD8-7547-4DFB-B396-DA893E6AB5A5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EFEA8D73-D4E5-45CF-91FB-36BF4FA93473}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EFEA8D73-D4E5-45CF-91FB-36BF4FA93473}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EFEA8D73-D4E5-45CF-91FB-36BF4FA93473}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4F679E76-DA7B-4918-AF34-5702591BB6D2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4F679E76-DA7B-4918-AF34-5702591BB6D2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4F679E76-DA7B-4918-AF34-5702591BB6D2}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(TeamFoundationVersionControl) = preSolution
+		SccNumberOfProjects = 1
+		SccEnterpriseProvider = {4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}
+		SccTeamFoundationServer = http://ginger:8080/
+		SccProjectUniqueName0 = AngliaTemplate\\AngliaTemplate.csproj
+		SccProjectName0 = AngliaTemplate
+		SccAuxPath0 = http://ginger:8080
+		SccLocalPath0 = AngliaTemplate
+		SccProvider0 = {4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}
+	EndGlobalSection
+EndGlobal

@@ -1,0 +1,81 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="Pharma.master.cs" Inherits="Pharma" %>
+
+<%@ Register Assembly="AjaxControlToolkit" Namespace="AjaxControlToolkit" TagPrefix="cc1" %>
+<%@ Register TagPrefix="BlackwaterPharma" TagName="RightNavBar" Src="~/_RightBarNav.ascx" %>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+	<link rel="stylesheet" type="text/css" href="CSS/tabs.css" />
+	<link rel="stylesheet" type="text/css" href="CSS/Main.css" />
+	<%--<script type="text/javascript" language="javascript" src="JScript/JScript.js"></script>--%>
+	<title>
+		<asp:Literal ID="Literal1" runat="server" Text="Blackwater Medical Centre | " />
+		<asp:ContentPlaceHolder ID="titleContent" runat="server" />
+	</title>
+	<asp:ContentPlaceHolder ID="head" runat="server">
+	</asp:ContentPlaceHolder>
+</head>
+<body>
+	<form id="form1" runat="server">
+	<div id="container">
+		<div id="header">
+			<div id="logo">
+				<table>
+					<tr>
+						<td style="text-align: left; vertical-align: bottom; width: 50%">
+							<img alt="Blackwater Pharma" src="Images/nhs-services-logo-small.gif" />
+						</td>
+						<td style="text-align: right; width: 50%">
+							<img alt="Blackwater Pharma" src="Images/BigPharma_Logo.jpg" />
+						</td>
+					</tr>
+				</table>
+				<table class="bar">
+					<tr>
+						<td class="HeaderBarText">
+							Providing Prescription Medicines, Advice & Healthcare at :: <span class="HeaderBarOrangeText">
+								Maldon 01621 855118</span>
+						</td>
+					</tr>
+				</table>
+			</div>
+		</div>
+		<div id="header1">
+			<asp:BulletedList ID="bulMainMenu" runat="server" DisplayMode="LinkButton" OnClick="bulMainMenu_OnClick"
+				EnableViewState="true" />
+		</div>
+		<div id="submenu">
+			<asp:BulletedList ID="bulSubMenu" runat="server" DisplayMode="LinkButton" OnClick="bulSubMenu_OnClick"
+				EnableViewState="true" />
+		</div>
+		<div id="middle-column">
+			<asp:SiteMapDataSource ID="SiteMapDataSource1" runat="server" ShowStartingNode="true" />
+			<asp:SiteMapPath ID="SiteMapPath1" runat="server">
+				<RootNodeTemplate>
+					<asp:Label ID="lblYouAreHere" runat="server" Text="You are here:" />
+					<asp:LinkButton ID="LinkButton1" runat="server" Text='<%# Eval("title") %>' CommandArgument='<%# Eval("url") %>'
+						OnCommand="LinkButton1_Command">
+					</asp:LinkButton>
+				</RootNodeTemplate>
+			</asp:SiteMapPath>
+			<br />
+			<asp:ContentPlaceHolder ID="ContentPlaceHolder2" runat="server">
+			</asp:ContentPlaceHolder>
+		</div>
+		<div id="right-column">
+			<BlackwaterPharma:RightNavBar runat="server" ID="rightNavBar" EnableViewState="false" />
+		</div>
+		<div id="footer">
+			<span>
+				<a id="aHome" runat="server">Home</a> | <a id="aSitemap" runat="server">Sitemap</a></span>
+			<br />
+			<span>Copyright &copy; 2010 Blackwater Pharma</span>
+			<br />
+			<div style="text-align: right">
+			<a href="mailto:robsilveruk@gmail.com?Subject=Enquiry">Site created by RSS (Rob Silver Solutions)</a>
+			</div>
+		</div>
+	</div>
+	</form>
+</body>
+</html>
