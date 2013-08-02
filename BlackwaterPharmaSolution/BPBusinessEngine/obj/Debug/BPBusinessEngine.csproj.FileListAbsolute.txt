@@ -1,0 +1,36 @@
+C:\Users\roberts.ANGLIA\Documents\Anglia\Projects\BlackwaterPharmaSolution\BPBusinessEngine\bin\Debug\BPBusinessEngine.dll
+C:\Users\roberts.ANGLIA\Documents\Anglia\Projects\BlackwaterPharmaSolution\BPBusinessEngine\bin\Debug\BPBusinessEngine.pdb
+C:\Users\roberts.ANGLIA\Documents\Anglia\Projects\BlackwaterPharmaSolution\BPBusinessEngine\bin\Debug\AngliaTemplate.dll
+C:\Users\roberts.ANGLIA\Documents\Anglia\Projects\BlackwaterPharmaSolution\BPBusinessEngine\bin\Debug\AngliaTemplate.pdb
+C:\Users\roberts.ANGLIA\Documents\Anglia\Projects\BlackwaterPharmaSolution\BPBusinessEngine\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\roberts.ANGLIA\Documents\Anglia\Projects\BlackwaterPharmaSolution\BPBusinessEngine\obj\Debug\BPBusinessEngine.dll
+C:\Users\roberts.ANGLIA\Documents\Anglia\Projects\BlackwaterPharmaSolution\BPBusinessEngine\obj\Debug\BPBusinessEngine.pdb
+C:\Users\roberts.ANGLIA\Documents\Anglia\Projects\BlackwaterPharmaSolution\BPBusinessEngine\bin\Debug\BPDBEngine.dll
+C:\Users\roberts.ANGLIA\Documents\Anglia\Projects\BlackwaterPharmaSolution\BPBusinessEngine\bin\Debug\BPDBEngine.pdb
+C:\Users\Robert\Documents\DevCode\BlackwaterP\BlackwaterPharmaSolution\BPBusinessEngine\bin\Debug\BPBusinessEngine.dll
+C:\Users\Robert\Documents\DevCode\BlackwaterP\BlackwaterPharmaSolution\BPBusinessEngine\bin\Debug\BPBusinessEngine.pdb
+C:\Users\Robert\Documents\DevCode\BlackwaterP\BlackwaterPharmaSolution\BPBusinessEngine\bin\Debug\AngliaTemplate.dll
+C:\Users\Robert\Documents\DevCode\BlackwaterP\BlackwaterPharmaSolution\BPBusinessEngine\bin\Debug\BPDBEngine.dll
+C:\Users\Robert\Documents\DevCode\BlackwaterP\BlackwaterPharmaSolution\BPBusinessEngine\bin\Debug\AngliaTemplate.pdb
+C:\Users\Robert\Documents\DevCode\BlackwaterP\BlackwaterPharmaSolution\BPBusinessEngine\bin\Debug\BPDBEngine.pdb
+C:\Users\Robert\Documents\DevCode\BlackwaterP\BlackwaterPharmaSolution\BPBusinessEngine\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\Robert\Documents\DevCode\BlackwaterP\BlackwaterPharmaSolution\BPBusinessEngine\obj\Debug\BPBusinessEngine.dll
+C:\Users\Robert\Documents\DevCode\BlackwaterP\BlackwaterPharmaSolution\BPBusinessEngine\obj\Debug\BPBusinessEngine.pdb
+C:\Documents and Settings\Robert\My Documents\DevCode\BlackwaterP\BlackwaterPharmaSolution\BPBusinessEngine\bin\Debug\BPBusinessEngine.dll
+C:\Documents and Settings\Robert\My Documents\DevCode\BlackwaterP\BlackwaterPharmaSolution\BPBusinessEngine\bin\Debug\BPBusinessEngine.pdb
+C:\Documents and Settings\Robert\My Documents\DevCode\BlackwaterP\BlackwaterPharmaSolution\BPBusinessEngine\bin\Debug\AngliaTemplate.dll
+C:\Documents and Settings\Robert\My Documents\DevCode\BlackwaterP\BlackwaterPharmaSolution\BPBusinessEngine\bin\Debug\BPDBEngine.dll
+C:\Documents and Settings\Robert\My Documents\DevCode\BlackwaterP\BlackwaterPharmaSolution\BPBusinessEngine\bin\Debug\AngliaTemplate.pdb
+C:\Documents and Settings\Robert\My Documents\DevCode\BlackwaterP\BlackwaterPharmaSolution\BPBusinessEngine\bin\Debug\BPDBEngine.pdb
+C:\Documents and Settings\Robert\My Documents\DevCode\BlackwaterP\BlackwaterPharmaSolution\BPBusinessEngine\obj\Debug\ResolveAssemblyReference.cache
+C:\Documents and Settings\Robert\My Documents\DevCode\BlackwaterP\BlackwaterPharmaSolution\BPBusinessEngine\obj\Debug\BPBusinessEngine.dll
+C:\Documents and Settings\Robert\My Documents\DevCode\BlackwaterP\BlackwaterPharmaSolution\BPBusinessEngine\obj\Debug\BPBusinessEngine.pdb
+C:\Users\silverr\Documents\DevCode\Blackwater\BlackwaterPharmaSolution\BPBusinessEngine\bin\Debug\BPBusinessEngine.dll
+C:\Users\silverr\Documents\DevCode\Blackwater\BlackwaterPharmaSolution\BPBusinessEngine\bin\Debug\BPBusinessEngine.pdb
+C:\Users\silverr\Documents\DevCode\Blackwater\BlackwaterPharmaSolution\BPBusinessEngine\bin\Debug\AngliaTemplate.dll
+C:\Users\silverr\Documents\DevCode\Blackwater\BlackwaterPharmaSolution\BPBusinessEngine\bin\Debug\BPDBEngine.dll
+C:\Users\silverr\Documents\DevCode\Blackwater\BlackwaterPharmaSolution\BPBusinessEngine\bin\Debug\AngliaTemplate.pdb
+C:\Users\silverr\Documents\DevCode\Blackwater\BlackwaterPharmaSolution\BPBusinessEngine\bin\Debug\BPDBEngine.pdb
+C:\Users\silverr\Documents\DevCode\Blackwater\BlackwaterPharmaSolution\BPBusinessEngine\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\silverr\Documents\DevCode\Blackwater\BlackwaterPharmaSolution\BPBusinessEngine\obj\Debug\BPBusinessEngine.dll
+C:\Users\silverr\Documents\DevCode\Blackwater\BlackwaterPharmaSolution\BPBusinessEngine\obj\Debug\BPBusinessEngine.pdb
