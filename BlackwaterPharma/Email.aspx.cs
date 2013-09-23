@@ -54,36 +54,6 @@ public partial class Email : System.Web.UI.Page
         this.lblUnsafeValues.Visible = false;
         #endregion Check all fields contain safe values
 
-        #region Save the request to the DB.
-        Tblprescriptionrequest req = this.storeRequestToMemory();
-        bool success = false;
-        try
-        {
-            success = BPBusinessEngine.PrescriptionRequest.SavePrescriptionRequestToDB(req);
-        }
-        catch (Exception ex)
-        {
-            BPBusinessEngine.Utility.SaveEvents("Email.btnSubmit_OnClick", "BPBusinessEngine.PrescriptionRequest.SavePrescriptionRequestToDB() returned error: " + ex.Message, "Error");
-        }
-        finally
-        {
-            if (null != req)
-            {
-                req.Dispose();
-                req = null;
-            }
-        }
-        #endregion Save the request to the DB.
-
-        if (!success)
-        {
-            this.lblError.Text = "There was a problem sending your request.  Please try again.  If the problem persists, please telephone the pharmacy on " + Core.AppSetting("PharmacyTelephoneNumber");
-            this.lblError.Visible = true;
-            return;
-        }
-        else
-            this.lblError.Visible = false;
-
         #region Build up the values of the tags and their replacement values
         string address2 = ((string.Empty == this.txtAddress2.Text) ? string.Empty : this.txtAddress2.Text.Substring(0, 1).ToUpper() + this.txtAddress2.Text.Substring(1).ToLower());
         string[] args = new string[30] 
