@@ -40,14 +40,6 @@
 					10am - 8pm
 				</td>
 			</tr>
-			<tr>
-				<td class="OpeningHoursLine3PartA">
-					Bank holidays
-				</td>
-				<td class="OpeningHoursLine3PartB">
-					10am - 8pm
-				</td>
-			</tr>
 		</table>
 		<p>
 		</p>
