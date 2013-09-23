@@ -52,14 +52,4 @@ Global
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
-	GlobalSection(TeamFoundationVersionControl) = preSolution
-		SccNumberOfProjects = 1
-		SccEnterpriseProvider = {4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}
-		SccTeamFoundationServer = http://ginger:8080/
-		SccProjectUniqueName0 = AngliaTemplate\\AngliaTemplate.csproj
-		SccProjectName0 = AngliaTemplate
-		SccAuxPath0 = http://ginger:8080
-		SccLocalPath0 = AngliaTemplate
-		SccProvider0 = {4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}
-	EndGlobalSection
 EndGlobal
