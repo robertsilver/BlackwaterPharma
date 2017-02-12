@@ -351,7 +351,65 @@ table.tabType01 td.noborder,
 table.tabType02 td.noborder {
 	border: none;
 }
-
-
-
 /* END - Services.aspx */
+
+/* Carousel start */
+.carousel {
+    /*height: 285px;*/
+    overflow: hidden;
+    margin-left: 0;
+    background-color: #60c5ba;
+    color: #000;
+    padding: 10px;
+}
+
+    .carousel .title-section {
+        color: #000;
+        font-weight: bold;
+        font-size: 160%;
+    }
+
+    .carousel .content {
+        line-height: 150%;
+        text-align: justify;
+        overflow: hidden;
+        font-size: 1.5em;
+    }
+
+    .carousel .content .text {
+        margin-bottom: 10px;
+    }
+
+     .carousel .content .text:last-child {
+        margin-bottom: 0;
+    }
+
+    .carousel .slick-dots {
+        text-align: center;
+        position: relative;
+        top: -10px;
+        left: -40px;
+    }
+
+        .carousel .slick-dots li {
+            display: inline-block;
+            margin-right: 10px;
+        }
+
+            .carousel .slick-dots li .pager-item {
+                background-image: url('/Images/Icons/iconFeaturedBubbleWhite_16x16.png');
+                width: 16px;
+                height: 16px;
+            }
+
+        .carousel .slick-dots .slick-active .pager-item {
+            background-image: url('/Images/Icons/iconFeaturedBubbleActiveWhite_16x16.png');
+            width: 16px;
+            height: 16px;
+        }
+
+    .carousel .slick-track:before, .slick-track:after {
+        display: none;
+        content: '';
+    }
+/* Carousel end */

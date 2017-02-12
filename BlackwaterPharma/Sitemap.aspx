@@ -30,5 +30,5 @@
 	</p>
 	<a href="http://www.blackwaterpharma.co.uk/FindUs.aspx">Find Us</a><br />
 	<a href="http://www.blackwaterpharma.co.uk/Background.aspx">Background information on
-		Blackwater Medical Centre</a><br />
+		Blackwater Medical Pharma</a><br />
 </asp:Content>

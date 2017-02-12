@@ -1,0 +1,7 @@
+D:\Personal\Git\BlackwaterPharma\BlackwaterPharmaSolution\BPDBEngine\bin\Release\BPDBEngine.dll
+D:\Personal\Git\BlackwaterPharma\BlackwaterPharmaSolution\BPDBEngine\bin\Release\BPDBEngine.pdb
+D:\Personal\Git\BlackwaterPharma\BlackwaterPharmaSolution\BPDBEngine\bin\Release\AngliaTemplate.dll
+D:\Personal\Git\BlackwaterPharma\BlackwaterPharmaSolution\BPDBEngine\bin\Release\AngliaTemplate.pdb
+D:\Personal\Git\BlackwaterPharma\BlackwaterPharmaSolution\BPDBEngine\obj\Release\BPDBEngine.csprojResolveAssemblyReference.cache
+D:\Personal\Git\BlackwaterPharma\BlackwaterPharmaSolution\BPDBEngine\obj\Release\BPDBEngine.dll
+D:\Personal\Git\BlackwaterPharma\BlackwaterPharmaSolution\BPDBEngine\obj\Release\BPDBEngine.pdb

@@ -48,7 +48,7 @@
 			Tel: <strong>01621 855118</strong><br />
 		</p>
 		<p>
-			Blackwater Medical Centre:<br />
+			Blackwater Medical Pharma:<br />
 			Tel: <strong>0844 499 6635</strong>
 		</p>
 	</div>

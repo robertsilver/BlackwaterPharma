@@ -1,0 +1,5 @@
+D:\Personal\Git\BlackwaterPharma\BlackwaterPharmaSolution\AngliaTemplate\bin\Release\AngliaTemplate.dll
+D:\Personal\Git\BlackwaterPharma\BlackwaterPharmaSolution\AngliaTemplate\bin\Release\AngliaTemplate.pdb
+D:\Personal\Git\BlackwaterPharma\BlackwaterPharmaSolution\AngliaTemplate\obj\Release\AngliaTemplate.csprojResolveAssemblyReference.cache
+D:\Personal\Git\BlackwaterPharma\BlackwaterPharmaSolution\AngliaTemplate\obj\Release\AngliaTemplate.dll
+D:\Personal\Git\BlackwaterPharma\BlackwaterPharmaSolution\AngliaTemplate\obj\Release\AngliaTemplate.pdb

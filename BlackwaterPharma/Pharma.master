@@ -1,15 +1,20 @@
 ﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="Pharma.master.cs" Inherits="Pharma" %>
 
-<%@ Register Assembly="AjaxControlToolkit" Namespace="AjaxControlToolkit" TagPrefix="cc1" %>
 <%@ Register TagPrefix="BlackwaterPharma" TagName="RightNavBar" Src="~/_RightBarNav.ascx" %>
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head runat="server">
 	<link rel="stylesheet" type="text/css" href="CSS/tabs.css" />
 	<link rel="stylesheet" type="text/css" href="CSS/Main.css" />
-	<%--<script type="text/javascript" language="javascript" src="JScript/JScript.js"></script>--%>
+    
+    <script src="https://code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
+    <script src="JScript/Lib/jquery.flexslider-min.js"></script>
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/jquery.slick/1.5.0/slick.css" />
+    <script type="text/javascript" src="//cdn.jsdelivr.net/jquery.slick/1.5.0/slick.min.js"></script>
+
+    <link rel="stylesheet" type="text/css" href="CSS/FlexSliderConverted.css" />
 	<title>
-		<asp:Literal ID="Literal1" runat="server" Text="Blackwater Medical Centre | " />
+		<asp:Literal ID="Literal1" runat="server" Text="Blackwater Medical Pharma | " />
 		<asp:ContentPlaceHolder ID="titleContent" runat="server" />
 	</title>
 	<asp:ContentPlaceHolder ID="head" runat="server">
