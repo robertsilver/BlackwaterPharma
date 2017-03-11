@@ -1,10 +1,12 @@
 ﻿
-Microsoft Visual Studio Solution File, Format Version 11.00
-# Visual Web Developer Express 2010
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2013
+VisualStudioVersion = 12.0.40629.0
+MinimumVisualStudioVersion = 10.0.40219.1
 Project("{E24C65DC-7377-472B-9ABA-BC803B73C61A}") = "BlackwaterPharma", "..\BlackwaterPharma\", "{856F53FB-0128-444C-A0E6-CACAF33C4BE4}"
 	ProjectSection(WebsiteProperties) = preProject
-		TargetFrameworkMoniker = ".NETFramework,Version%3Dv3.5"
-		ProjectReferences = "{4F679E76-DA7B-4918-AF34-5702591BB6D2}|AngliaTemplate.dll;{3BA26FD8-7547-4DFB-B396-DA893E6AB5A5}|BPBusinessEngine.dll;{EFEA8D73-D4E5-45CF-91FB-36BF4FA93473}|BPDBEngine.dll;"
+		TargetFrameworkMoniker = ".NETFramework,Version%3Dv4.5.2"
+		ProjectReferences = "{3ba26fd8-7547-4dfb-b396-da893e6ab5a5}|BPBusinessEngine.dll;{4F679E76-DA7B-4918-AF34-5702591BB6D2}|AngliaTemplate.dll;{EFEA8D73-D4E5-45CF-91FB-36BF4FA93473}|BPDBEngine.dll;{d762df20-3879-41dc-a965-f1f402aa7eec}|BlackwaterPharma.Business.dll;{2287FDA4-A93E-43E2-A8E4-7C0030E12837}|BlackwaterPharma.DataAccess.dll;"
 		Debug.AspNetCompiler.VirtualPath = "/BlackwaterPharma"
 		Debug.AspNetCompiler.PhysicalPath = "..\BlackwaterPharma\"
 		Debug.AspNetCompiler.TargetPath = "PrecompiledWeb\BlackwaterPharma\"
@@ -20,14 +22,19 @@ Project("{E24C65DC-7377-472B-9ABA-BC803B73C61A}") = "BlackwaterPharma", "..\Blac
 		Release.AspNetCompiler.FixedNames = "false"
 		Release.AspNetCompiler.Debug = "False"
 		VWDPort = "50885"
+		SlnRelativePath = "..\BlackwaterPharma\"
 		DefaultWebSiteLanguage = "Visual C#"
 	EndProjectSection
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BPBusinessEngine", "BPBusinessEngine\BPBusinessEngine.csproj", "{3BA26FD8-7547-4DFB-B396-DA893E6AB5A5}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AngliaTemplate", "AngliaTemplate\AngliaTemplate.csproj", "{4F679E76-DA7B-4918-AF34-5702591BB6D2}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BPDBEngine", "BPDBEngine\BPDBEngine.csproj", "{EFEA8D73-D4E5-45CF-91FB-36BF4FA93473}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AngliaTemplate", "AngliaTemplate\AngliaTemplate.csproj", "{4F679E76-DA7B-4918-AF34-5702591BB6D2}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BPBusinessEngine", "BPBusinessEngine\BPBusinessEngine.csproj", "{3BA26FD8-7547-4DFB-B396-DA893E6AB5A5}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BlackwaterPharma.Business", "BlackwaterPharma.Business\BlackwaterPharma.Business.csproj", "{D762DF20-3879-41DC-A965-F1F402AA7EEC}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BlackwaterPharma.DataAccess", "BlackwaterPharma.DataAccess\BlackwaterPharma.DataAccess.csproj", "{2287FDA4-A93E-43E2-A8E4-7C0030E12837}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -39,15 +46,26 @@ Global
 		{856F53FB-0128-444C-A0E6-CACAF33C4BE4}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{856F53FB-0128-444C-A0E6-CACAF33C4BE4}.Release|Any CPU.ActiveCfg = Debug|Any CPU
 		{856F53FB-0128-444C-A0E6-CACAF33C4BE4}.Release|Any CPU.Build.0 = Debug|Any CPU
-		{3BA26FD8-7547-4DFB-B396-DA893E6AB5A5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{3BA26FD8-7547-4DFB-B396-DA893E6AB5A5}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{3BA26FD8-7547-4DFB-B396-DA893E6AB5A5}.Release|Any CPU.Build.0 = Release|Any CPU
-		{EFEA8D73-D4E5-45CF-91FB-36BF4FA93473}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{EFEA8D73-D4E5-45CF-91FB-36BF4FA93473}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{EFEA8D73-D4E5-45CF-91FB-36BF4FA93473}.Release|Any CPU.Build.0 = Release|Any CPU
 		{4F679E76-DA7B-4918-AF34-5702591BB6D2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4F679E76-DA7B-4918-AF34-5702591BB6D2}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{4F679E76-DA7B-4918-AF34-5702591BB6D2}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{4F679E76-DA7B-4918-AF34-5702591BB6D2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EFEA8D73-D4E5-45CF-91FB-36BF4FA93473}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EFEA8D73-D4E5-45CF-91FB-36BF4FA93473}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EFEA8D73-D4E5-45CF-91FB-36BF4FA93473}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EFEA8D73-D4E5-45CF-91FB-36BF4FA93473}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3BA26FD8-7547-4DFB-B396-DA893E6AB5A5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3BA26FD8-7547-4DFB-B396-DA893E6AB5A5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3BA26FD8-7547-4DFB-B396-DA893E6AB5A5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3BA26FD8-7547-4DFB-B396-DA893E6AB5A5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D762DF20-3879-41DC-A965-F1F402AA7EEC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D762DF20-3879-41DC-A965-F1F402AA7EEC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D762DF20-3879-41DC-A965-F1F402AA7EEC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D762DF20-3879-41DC-A965-F1F402AA7EEC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2287FDA4-A93E-43E2-A8E4-7C0030E12837}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2287FDA4-A93E-43E2-A8E4-7C0030E12837}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2287FDA4-A93E-43E2-A8E4-7C0030E12837}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2287FDA4-A93E-43E2-A8E4-7C0030E12837}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

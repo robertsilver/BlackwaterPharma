@@ -1,127 +1,131 @@
-﻿using System;
+﻿using BlackwaterPharma.DataAccess;
+using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Web;
-using System.Web.UI;
 using System.Web.UI.WebControls;
-using BPBusinessEngine;
-using BPDBEngine;
 
 public partial class RightBarNav : System.Web.UI.UserControl
 {
-	protected void Page_Load(object sender, EventArgs e)
-	{
-		repRightNavBar.DataSource = this.getRightNavBar();
-		repRightNavBar.DataBind();
-	}
+    private string url { get; set; }
 
-	protected void repRightNavBar_OnItemDataBound(Object Sender, RepeaterItemEventArgs e)
-	{
-		if (e.Item.ItemType == ListItemType.Item)
-		{
-			Image i = (Image)e.Item.FindControl("imgURL");
-			HiddenField hidI = (HiddenField)e.Item.FindControl("hidImg");
-			HyperLink hypL = (HyperLink)e.Item.FindControl("hypLink");
-			if (null != i && null != hidI)
-			{
-				this.showOrHideControls(i, hidI, hypL);
-				hidI.Dispose();
-				hidI = null;
-				i.Dispose();
-				i = null;
-			}
-		}
-		else if (e.Item.ItemType == ListItemType.AlternatingItem)
-		{
-			Image i = (Image)e.Item.FindControl("imgURLAlternate");
-			HiddenField hidI = (HiddenField)e.Item.FindControl("hidImgAlternate");
-			HyperLink hypL = (HyperLink)e.Item.FindControl("hypAltLink");
-			if (null != i && null != hidI)
-			{
-				this.showOrHideControls(i, hidI, hypL);
-				hidI.Dispose();
-				hidI = null;
-				i.Dispose();
-				i = null;
-			}
-		}
-	}
+    protected void Page_Load(object sender, EventArgs e)
+    {
+        url = Helper.AppSetting("JSON.RightNavBar");
 
-	#region Private methods
+        repRightNavBar.DataSource = this.getRightNavBar();
+        repRightNavBar.DataBind();
+    }
 
-	private void showOrHideControls(Image img, HiddenField imageName, HyperLink hypLink)
-	{
-		if (string.Empty != imageName.Value)
-		{
-			int ID = 0;
-			try
-			{
-				ID = Convert.ToInt32(imageName.Value);
-			}
-			catch { }
+    protected void repRightNavBar_OnItemDataBound(Object Sender, RepeaterItemEventArgs e)
+    {
+        if (e.Item.ItemType == ListItemType.Item)
+        {
+            Image i = (Image)e.Item.FindControl("imgURL");
+            HiddenField hidI = (HiddenField)e.Item.FindControl("hidImg");
+            HyperLink hypL = (HyperLink)e.Item.FindControl("hypLink");
+            if (null != i && null != hidI)
+            {
+                this.showOrHideControls(i, hidI, hypL);
+                hidI.Dispose();
+                hidI = null;
+                i.Dispose();
+                i = null;
+            }
+        }
+        else if (e.Item.ItemType == ListItemType.AlternatingItem)
+        {
+            Image i = (Image)e.Item.FindControl("imgURLAlternate");
+            HiddenField hidI = (HiddenField)e.Item.FindControl("hidImgAlternate");
+            HyperLink hypL = (HyperLink)e.Item.FindControl("hypAltLink");
+            if (null != i && null != hidI)
+            {
+                this.showOrHideControls(i, hidI, hypL);
+                hidI.Dispose();
+                hidI = null;
+                i.Dispose();
+                i = null;
+            }
+        }
+    }
 
-			Tblrightnavbar nav = null;
-			try
-			{
-				nav = BPBusinessEngine.RightNavBar.GetOneRecord(ID);
-			}
-			catch (Exception ex)
-			{
-			}
+    #region Private methods
 
-			if (null != hypLink && string.Empty != nav.Url)
-				hypLink.NavigateUrl = nav.Url;
+    private void showOrHideControls(Image img, HiddenField imageName, HyperLink hypLink)
+    {
+        if (string.Empty != imageName.Value)
+        {
+            int Id = 0;
+            try
+            {
+                Id = Convert.ToInt32(imageName.Value);
+            }
+            catch { }
 
-			if (null != nav)
-			{
-				img.ImageUrl = this.GetImageURL(nav.Image);
-				img.ImageAlign = ImageAlign.Right;
-				img.Height = nav.Height;
-				img.Width = nav.Width;
-				img.AlternateText = nav.Alttext;
-				img.Visible = true;
 
-				nav.Dispose();
-				nav = null;
-			}
-		}
-		else
-			img.Visible = false;
-	}
+            RightBarData nav = null;
+            try
+            {
+                nav = BlackwaterPharma.Business.RightBar.GetOneRecord(Id, url);
+            }
+            catch (Exception ex)
+            {
+            }
 
-	private List<Tblrightnavbar> getRightNavBar()
-	{
-		List<Tblrightnavbar> rightNavBar = null;
-		try
-		{
-			rightNavBar = BPBusinessEngine.RightNavBar.GetMainMenu();
-		}
-		catch (Exception ex)
-		{
-		}
+            if (null != hypLink && string.Empty != nav.Url)
+                hypLink.NavigateUrl = nav.Url;
 
-		return rightNavBar;
-	}
+            if (null != nav)
+            {
+                img.ImageUrl = this.GetImageURL(nav.Image);
+                img.ImageAlign = ImageAlign.Right;
+                if (nav.Height.HasValue)
+                    img.Height = nav.Height.Value;
 
-	#endregion Private methods
+                if (nav.Width.HasValue)
+                    img.Width = nav.Width.Value;
 
-	#region Public methods
+                img.AlternateText = nav.AltText;
+                img.Visible = true;
 
-	public string GetImageURL(string DBImage)
-	{
-		if (string.Empty == DBImage)
-			return string.Empty;
+                nav = null;
+            }
+        }
+        else
+            img.Visible = false;
+    }
 
-		string image = string.Empty;
-		try
-		{
-			image = BPBusinessEngine.Utility.DisplayProductImages(DBImage);
-		}
-		catch (Exception ex)
-		{
-		}
+    private List<RightBarData> getRightNavBar()
+    {
+        List<RightBarData> rightNavBar = null;
+        try
+        {
+            rightNavBar = BlackwaterPharma.Business.RightBar.GetMainMenu(url);
+        }
+        catch (Exception ex)
+        {
+        }
 
-		return image;
-	}
-	#endregion Public methods
+        return rightNavBar;
+    }
+
+    #endregion Private methods
+
+    #region Public methods
+
+    public string GetImageURL(string DBImage)
+    {
+        if (string.Empty == DBImage)
+            return string.Empty;
+
+        string image = string.Empty;
+        try
+        {
+            image = Helper.DisplayProductImages(DBImage);
+        }
+        catch (Exception ex)
+        {
+        }
+
+        return image;
+    }
+    #endregion Public methods
 }

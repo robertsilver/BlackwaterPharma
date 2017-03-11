@@ -73,16 +73,6 @@
     <Compile Include="Utility.cs" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\AngliaTemplate\AngliaTemplate.csproj">
-      <Project>{4F679E76-DA7B-4918-AF34-5702591BB6D2}</Project>
-      <Name>AngliaTemplate</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\BPDBEngine\BPDBEngine.csproj">
-      <Project>{EFEA8D73-D4E5-45CF-91FB-36BF4FA93473}</Project>
-      <Name>BPDBEngine</Name>
-    </ProjectReference>
-  </ItemGroup>
-  <ItemGroup>
     <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
       <Visible>False</Visible>
       <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
@@ -98,6 +88,16 @@
       <ProductName>Windows Installer 3.1</ProductName>
       <Install>true</Install>
     </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\AngliaTemplate\AngliaTemplate.csproj">
+      <Project>{4f679e76-da7b-4918-af34-5702591bb6d2}</Project>
+      <Name>AngliaTemplate</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\BPDBEngine\BPDBEngine.csproj">
+      <Project>{efea8d73-d4e5-45cf-91fb-36bf4fa93473}</Project>
+      <Name>BPDBEngine</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
