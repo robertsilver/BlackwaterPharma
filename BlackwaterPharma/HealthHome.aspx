@@ -7,7 +7,7 @@
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="Server">
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder2" runat="Server">
-	<img src="Images/person-with-pc.jpg" alt="Your Health Online" width="236" height="170"
+	<img src="Assets/Images/person-with-pc.jpg" alt="Your Health Online" width="236" height="170"
 		align="right" />
 	<h1 class="YourPharmacyOnline">
 		<span class="Your">Your</span>
@@ -28,9 +28,9 @@
 		Our <a href="Health_Medichest.aspx">Medicine Chest</a> has our recommendations
 		of useful medicines and dressings you should keep at home.</p>
 	<p>
-		<img src="Images/nhs-pharmacy-logo-small.gif" alt="Providing NHS Services" width="62"
-			height="70" /><img src="images/nhs-services-logo-small.gif" alt="NHS Services Available Here"
+		<img src="Assets/Images/nhs-pharmacy-logo-small.gif" alt="Providing NHS Services" width="62"
+			height="70" /><img src="Assets/Images/nhs-services-logo-small.gif" alt="NHS Services Available Here"
 				width="140" height="70" /><a href="http://www.nhsdirect.nhs.uk/" target="_blank"><img
-					src="images/nhs-direct.gif" alt="NHS Direct Call 0845 4647" width="121" height="50"
+					src="Assets/Images/nhs-direct.gif" alt="NHS Direct Call 0845 4647" width="121" height="50"
 					border="0" /></a></p>
 </asp:Content>

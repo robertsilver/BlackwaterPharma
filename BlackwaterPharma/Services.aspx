@@ -112,12 +112,12 @@
 		records of your prescribed medicines, but also helps check for drug interactions
 		and adverse effects. Checks can be made with medication bought over the counter.</p>
 	<p>
-		<img src="Images/nhs-pharmacy-logo-small.gif" alt="Providing NHS Services" width="62"
+		<img src="Assets/Images/nhs-pharmacy-logo-small.gif" alt="Providing NHS Services" width="62"
 			height="70" class="logo01" />
-		<img src="images/nhs-services-logo-small.gif" alt="NHS Services Available Here" width="140"
+		<img src="Assets/Images/nhs-services-logo-small.gif" alt="NHS Services Available Here" width="140"
 			height="70" class="logo01" />
 		<a href="http://www.nhsdirect.nhs.uk/" target="_blank">
-			<img src="images/nhs-direct.gif" alt="NHS Direct Call 0845 4647" width="121" height="50"
+			<img src="Assets/Images/nhs-direct.gif" alt="NHS Direct Call 0845 4647" width="121" height="50"
 				border="0" class="logo01" /></a>
 	</p>
 </asp:Content>
