@@ -81,9 +81,9 @@
 		<strong><a href="HealthLinks.aspx#pctcoun">Contact your local council</a> for advice
 			on the safe disposal of products that we cannot accept from you.</strong></p>
 	<p>
-		<img src="Images/nhs-pharmacy-logo-small.gif" alt="Providing NHS Services" width="62"
-			height="70" class="logo01" /><img src="Images/nhs-services-logo-small.gif" alt="NHS Services Available Here"
+		<img src="Assets/Images/nhs-pharmacy-logo-small.gif" alt="Providing NHS Services" width="62"
+			height="70" class="logo01" /><img src="Assets/Images/nhs-services-logo-small.gif" alt="NHS Services Available Here"
 				width="140" height="70" class="logo01" /><a href="http://www.nhsdirect.nhs.uk/" target="_blank"><img
-					src="images/nhs-direct.gif" alt="NHS Direct Call 0845 4647" width="121" height="50"
+					src="Assets/Images/nhs-direct.gif" alt="NHS Direct Call 0845 4647" width="121" height="50"
 					border="0" class="logo01" /></a></p>
 </asp:Content>

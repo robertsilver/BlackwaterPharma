@@ -4,15 +4,15 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head runat="server">
-	<link rel="stylesheet" type="text/css" href="CSS/tabs.css" />
-	<link rel="stylesheet" type="text/css" href="CSS/Main.css" />
+	<link rel="stylesheet" type="text/css" href="Assets/CSS/tabs.css" />
+	<link rel="stylesheet" type="text/css" href="Assets/CSS/Main.css" />
     
     <script src="https://code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
     <script src="JScript/Lib/jquery.flexslider-min.js"></script>
     <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/jquery.slick/1.5.0/slick.css" />
     <script type="text/javascript" src="//cdn.jsdelivr.net/jquery.slick/1.5.0/slick.min.js"></script>
 
-    <link rel="stylesheet" type="text/css" href="CSS/FlexSliderConverted.css" />
+    <link rel="stylesheet" type="text/css" href="Assets/CSS/FlexSliderConverted.css" />
 	<title>
 		<asp:Literal ID="Literal1" runat="server" Text="Blackwater Medical Pharma | " />
 		<asp:ContentPlaceHolder ID="titleContent" runat="server" />
@@ -28,10 +28,10 @@
 				<table>
 					<tr>
 						<td style="text-align: left; vertical-align: bottom; width: 50%">
-							<img alt="Blackwater Pharma" src="Images/nhs-services-logo-small.gif" />
+							<img alt="Blackwater Pharma" src="Assets/Assets/Images/nhs-services-logo-small.gif" />
 						</td>
 						<td style="text-align: right; width: 50%">
-							<img alt="Blackwater Pharma" src="Images/BigPharma_Logo.jpg" />
+							<img alt="Blackwater Pharma" src="Assets/Images/BigPharma_Logo.jpg" />
 						</td>
 					</tr>
 				</table>

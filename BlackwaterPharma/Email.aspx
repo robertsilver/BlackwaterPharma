@@ -4,7 +4,7 @@
 <asp:Content ID="Content1" ContentPlaceHolderID="titleContent" runat="Server">
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="head" runat="Server">
-    <link rel="stylesheet" type="text/css" href="CSS/Email.css" />
+    <link rel="stylesheet" type="text/css" href="Assets/CSS/Email.css" />
 </asp:Content>
 <asp:Content ID="Content3" ContentPlaceHolderID="ContentPlaceHolder2" runat="Server">
 <asp:Label ID="lblMessage" runat="server" Text="Welcome to Blackwater Pharmacy's repeat prescription.  Please fill out the form below with, requesting your repeat prescription, and we will do our best to fullfil it.  Thank you." /><br />

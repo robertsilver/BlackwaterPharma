@@ -1,0 +1,102 @@
+body {
+  font: .8em/1.8em verdana, arial, sans-serif;
+  background-color: #FFFFFF;
+  margin-left: 50px;
+  /*margin-right: 100px;*/
+}
+
+#content
+{
+	/*border-left: 1px solid #711515;
+	border-right: 1px solid #711515;
+	border-bottom: 1px solid #711515;*/
+	padding: 10px 5px 6px 5px;
+	clear: left;
+}
+
+#content h1
+{
+	font-size: 1.2em;
+	color: #711515;
+	background-color: Transparent;
+}
+
+#header ul
+{
+	margin: 0px 0px 0px 0x;
+}
+
+#header1 li 
+{
+	overflow: auto;
+	list-style-type: none;
+	float: left;
+	background: url("../Assets/Images/TestTabs/norm_left.gif") no-repeat left top;
+	margin: 1px 1px 1px 1px;
+	padding: 0 0 0 9px;
+	color: White;
+}
+
+#header1 a, #header1 strong, #header1 span {
+	display: block;
+	background: url("../Assets/Images/TestTabs/norm_right.gif") no-repeat right top;
+	/*padding:5px 15px 4px 6px;*/
+	padding: 5px 15px 4px 6px;
+	color: White;
+	font-weight: bold;
+}
+
+#header1 .current {
+	background-image: url("../Assets/Images/TestTabs/norm_left_on.gif");
+}
+
+#header1 .current a {
+	background-image: url("../Assets/Images/TestTabs/norm_right_on.gif");
+	padding-bottom: 5px;
+	color: Black;
+}
+
+#submenu
+{
+	background-color: #E1FFD9;
+	border: 1px solid #CCCCCC;
+	clear: left;
+	
+	float: left;
+	
+	/* This width will make the green bar go to the end of the content.*/	
+	width: 100%;
+}
+
+#submenu ul
+{
+	margin: 0px
+}
+
+#submenu li 
+{
+	color: #000066;
+	font-size: 1em;
+	border-right: 1px solid #CCCCCC;
+	float: left;
+	margin-top: -1px;
+	list-style-type: none;
+}
+
+#submenu a {
+	display: block;
+	/*padding-top: 6px;
+	padding-bottom: 4px;*/
+	padding-left: 10px;
+	padding-right: 10px;
+}
+
+#submenu a:link, 
+#submenu a:visited {
+	color: #000066;
+	text-decoration: none;
+}
+
+#submenu a:hover {
+	background-color: #00FF33;
+}

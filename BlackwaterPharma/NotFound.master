@@ -5,8 +5,8 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head runat="server">
     <title></title>
-    <link rel="stylesheet" type="text/css" href="CSS/tabs.css" />
-	<link rel="stylesheet" type="text/css" href="CSS/Main.css" />
+    <link rel="stylesheet" type="text/css" href="Assets/CSS/tabs.css" />
+	<link rel="stylesheet" type="text/css" href="Assets/CSS/Main.css" />
     <asp:ContentPlaceHolder id="head" runat="server">
     </asp:ContentPlaceHolder>
 </head>
@@ -18,10 +18,10 @@
 				<table>
 					<tr>
 						<td style="text-align: left; vertical-align: bottom; width: 50%">
-							<img alt="Blackwater Pharma" src="Images/nhs-services-logo-small.gif" />
+							<img alt="Blackwater Pharma" src="Assets/Assets/Images/nhs-services-logo-small.gif" />
 						</td>
 						<td style="text-align: right; width: 50%">
-							<img alt="Blackwater Pharma" src="Images/BigPharma_Logo.jpg" />
+							<img alt="Blackwater Pharma" src="Assets/Assets/Images/BigPharma_Logo.jpg" />
 						</td>
 					</tr>
 				</table>
