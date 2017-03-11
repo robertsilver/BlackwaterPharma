@@ -58,9 +58,6 @@ public partial class Pharma : System.Web.UI.MasterPage
 		#region Make one of the tabs go white
 		if (null != bulMainMenu && bulMainMenu.Items.Count > 0 && clickedMainMenuTab >= 0)
 			bulMainMenu.Items[clickedMainMenuTab].Attributes.Add("class", "current");
-		else
-			// For some reason, we couldn't set the tab white.
-			BPBusinessEngine.Utility.SaveEvents("Pharma.master.PageLoad", "Variable, bulMainMenu, is null or its Count is zero.", "Debug");
 		#endregion Make one of the tabs go white
 
 		#region Setup the links within the footer
@@ -144,7 +141,6 @@ public partial class Pharma : System.Web.UI.MasterPage
 		}
 		catch (Exception ex)
 		{
-			BPBusinessEngine.Utility.SaveEvents("Pharma.master.getAndShowTabs", " BPBusinessEngine.MainMenu.GetMainMenu() returned error: " + ex.Message, "Error");
 		}
 
 		return tabs;

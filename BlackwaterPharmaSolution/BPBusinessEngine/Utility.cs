@@ -25,16 +25,13 @@ namespace BPBusinessEngine
 				return Core.AppSetting("GeneralUNC") + "/noimage.jpg";
 
 			string filename = Core.AppSetting("GeneralImages") + @"\" + imageName;
-			Utility.SaveEvents("Utility.DisplayProductImages", "Variable, filename = " + filename, "Debug");
 
 			if (System.IO.File.Exists(filename))
 			{
-				Utility.SaveEvents("Utility.DisplayProductImages", Core.AppSetting("GeneralUNC") + "/" + imageName, "Debug");
 				return Core.AppSetting("GeneralUNC") + "/" + imageName;
 			}
 			else
 			{
-				Utility.SaveEvents("Utility.DisplayProductImages", Core.AppSetting("GeneralUNC") + "/noimage.jpg", "Debug");
 				return Core.AppSetting("GeneralUNC") + "/noimage.jpg";
 			}
 		}
@@ -291,7 +288,6 @@ namespace BPBusinessEngine
             }
             catch (Exception ex)
             {
-                SaveEvents("BPBusinessEngine.SendEmail", "client.Send() returned error: " + ex.Message, "Error");
                 throw new ApplicationException("Email not sent: " + ex.Message);
             }
             finally

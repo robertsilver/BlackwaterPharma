@@ -79,7 +79,6 @@ public partial class Email : System.Web.UI.Page
         }
         catch (Exception ex)
         {
-            BPBusinessEngine.Utility.SaveEvents("Email.btnSubmit_OnClick", "BPBusinessEngine.Utility.ReplaceEmailTags() returned error: " + ex.Message, "Error");
         }
         #endregion Replace the email tags with real values
 
@@ -92,7 +91,6 @@ public partial class Email : System.Web.UI.Page
         {
             this.lblError.Text = "There was a problem sending the order to your email address.  Please try again";
             this.lblError.Visible = true;
-            BPBusinessEngine.Utility.SaveEvents("Email.btnSubmit_OnCLick", "Error: " + ex.Message, "Error");
         }
         #endregion Send the email
 

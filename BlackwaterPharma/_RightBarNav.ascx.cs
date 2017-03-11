@@ -67,7 +67,6 @@ public partial class RightBarNav : System.Web.UI.UserControl
 			}
 			catch (Exception ex)
 			{
-				Utility.SaveEvents("_RightBarNav.showOrHideControls", "BPBusinessEngine.RightNavBar.GetOneRecord() returned error: " + ex.Message, "Error");
 			}
 
 			if (null != hypLink && string.Empty != nav.Url)
@@ -99,7 +98,6 @@ public partial class RightBarNav : System.Web.UI.UserControl
 		}
 		catch (Exception ex)
 		{
-			Utility.SaveEvents("_RightBarNav.getRightNavBar", "BPBusinessEngine.RightNavBar.GetMainMenu() returned error: " + ex.Message, "Error");
 		}
 
 		return rightNavBar;
@@ -121,7 +119,6 @@ public partial class RightBarNav : System.Web.UI.UserControl
 		}
 		catch (Exception ex)
 		{
-			Utility.SaveEvents("_RightBarNav.GetImageURL", "BPBusinessEngine.Utility.DisplayProductImages(DBImage) returned error: " + ex.Message, "Error");
 		}
 
 		return image;

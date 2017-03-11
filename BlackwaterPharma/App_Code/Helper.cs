@@ -134,7 +134,6 @@ public class Helper
 		}
 		catch(Exception caught)
 		{
-			BPBusinessEngine.Utility.SaveEvents("App_Code.Helper.SaveIPData", "BPBusinessEngine.Utility.SaveIPs() returned error: " + caught.Message, "Error");
 		}
 		#endregion Save IP data to DB
     }
@@ -161,9 +160,6 @@ public class Helper
             else if (data.IndexOf("macro") >= 0)
                 valid = false;
         }
-
-        if (!valid)
-            BPBusinessEngine.Utility.SaveEvents("IsUserValueSafe()", "The method has identifed that the following text may be dangerous: " + data + ".  Variable, lengthToCheck, was set to: " + lengthToCheck.ToString(), "Error");
 
         return valid;
     }
