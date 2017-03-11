@@ -5,19 +5,19 @@ namespace BlackwaterPharma.DataAccess
 {
     public class MainMenuData
     {
-        private int B2BCustomer { get; set; }
-        private string Description { get; set; }
-        private bool Display { get; set; }
-        private int Distributor { get; set; }
-        private int Everyone { get; set; }
-        private int MenuId { get; set; }
-        private int ParentId { get; set; }
-        private bool? SpecialAccount { get; set; }
-        private bool? SuperUser { get; set; }
-        private string Text;
-        private string URL { get; set; }
-        private int Vendor { get; set; }
-        private string WhoCanView { get; set; }
+        public int? B2BCustomer { get; set; }
+        public string Description { get; set; }
+        public bool Display { get; set; }
+        public int? Distributor { get; set; }
+        public int? Everyone { get; set; }
+        public int MenuId { get; set; }
+        public int ParentId { get; set; }
+        public bool? SpecialAccount { get; set; }
+        public bool? SuperUser { get; set; }
+        public string Text { get; set; }
+        public string URL { get; set; }
+        public int? Vendor { get; set; }
+        public string WhoCanView { get; set; }
 
         public static List<MainMenuData> GetAll(int level, string url)
         {

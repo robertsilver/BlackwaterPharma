@@ -5,9 +5,12 @@ using System.Web;
 using System.Web.UI;
 using System.Web.UI.WebControls;
 using BPDBEngine;
+using BlackwaterPharma.DataAccess;
 
 public partial class Pharma : System.Web.UI.MasterPage
 {
+    private string url { get; set; }
+
 	private class PageNames
 	{
 		public static string Home = "Opening.aspx";
@@ -15,6 +18,8 @@ public partial class Pharma : System.Web.UI.MasterPage
 	}
 	protected override void OnInit(EventArgs e)
 	{
+        url = Helper.AppSetting("JSON.MainMenu");
+
 		base.OnInit(e);
 
 		#region Display the main bullet menu
@@ -64,8 +69,8 @@ public partial class Pharma : System.Web.UI.MasterPage
 
 		// Could've hardcoded the links, but when testing it would go
 		// to the live site, which didn't contain the pages.
-		aHome.HRef = AngliaTemplate.Core.AppSetting("Website") + "/" + PageNames.Home;
-		aSitemap.HRef = AngliaTemplate.Core.AppSetting("Website") + "/" + PageNames.Sitemap;
+		aHome.HRef = Helper.AppSetting("Website") + "/" + PageNames.Home;
+		aSitemap.HRef = Helper.AppSetting("Website") + "/" + PageNames.Sitemap;
 		#endregion Setup the links within the footer
 	}
 
@@ -78,7 +83,7 @@ public partial class Pharma : System.Web.UI.MasterPage
 	/// Displays the main bullet menu
 	/// </summary>
 	/// <param name="menus"></param>
-	private void displayMainBulletMenu(List<Tblmainmenu> menus)
+	private void displayMainBulletMenu(List<MainMenuData> menus)
 	{
 		if (null == menus)
 		{
@@ -88,9 +93,9 @@ public partial class Pharma : System.Web.UI.MasterPage
 
 		bulMainMenu.Items.Clear();
 		int count = 0;
-		foreach (Tblmainmenu m in menus)
+        foreach (MainMenuData m in menus)
 		{
-			bulMainMenu.Items.Add(new ListItem(m.Text, m.Url + "|" + m.Parentid + "|" + m.Menuid + "|" + count));
+			bulMainMenu.Items.Add(new ListItem(m.Text, m.URL + "|" + m.ParentId + "|" + m.MenuId + "|" + count));
 			count++;
 		}
 
@@ -131,13 +136,13 @@ public partial class Pharma : System.Web.UI.MasterPage
 
 	#region Private methods
 
-	private List<Tblmainmenu> getAndShowTabs(int level)
+    private List<MainMenuData> getAndShowTabs(int level)
 	{
-		List<Tblmainmenu> tabs = new List<Tblmainmenu>();
+        var tabs = new List<MainMenuData>();
 
 		try
 		{
-			tabs = BPBusinessEngine.MainMenu.GetMainMenu(level);
+            tabs = BlackwaterPharma.Business.MainMenu.GetMainMenu(level, url);
 		}
 		catch (Exception ex)
 		{
