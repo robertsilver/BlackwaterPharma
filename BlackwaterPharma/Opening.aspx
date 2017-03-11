@@ -19,7 +19,7 @@
                     Monday - Saturday 7am - 10pm<br />
                     Sunday 10am - 8pm
                 </p>
-                   <p class="text">
+                <p class="text">
                     Tel: 01621-855118
                 </p>
             </div>
@@ -35,7 +35,7 @@
             <div class="cf"></div>
         </div>
 
-         <div>
+        <div>
             <div class="title-section">Electronic Prescriptions</div>
             <div class="content">
                 <p class="text">If you get regular prescriptions the Electronic Prescription Service (EPS) may be able to save you time by saving you unnecessary trips to your GP.</p>
@@ -115,7 +115,8 @@
             &nbsp;&bull; The NHS Direct telephone service. <strong>Call 0845 4647</strong>
         </p>
         <img src="Assets/Images/nhs-pharmacy-logo-small.gif" alt="Providing NHS Services"
-            width="62" height="70" class="logo01" /><img src="Assets/Images/nhs-services-logo-small.gif"
+            width="62" height="70" class="logo01" />
+        <img src="Assets/Images/nhs-services-logo-small.gif"
                 alt="NHS Services Available Here" width="140" height="70" class="logo01" />
     </div>
 

@@ -47,13 +47,12 @@
 	clear: both;
 }
 
-.bar
-{
-	background-image: url("../Assets/Images/smallbar.jpg");
-	background-repeat: repeat-x;
-	width: 100%;
-	padding-top: -1px;
-	color: White;
+.bar {
+    background-image: url("/Assets/Images/smallbar.jpg");
+    background-repeat: repeat-x;
+    width: 100%;
+    padding-top: -1px;
+    color: White;
 }
 
 #footer 
@@ -239,7 +238,7 @@ li.altcolor {
 .HealthLinksHeader, .HealthSelfHelpHeader, .Consultations_MoreInfoHeader,
 .HealthHomeHeader
 {
-	background-image: url(../Assets/Images/pharmacy-cross.gif);
+	background-image: url(/Assets/Images/pharmacy-cross.gif);
 	background-repeat: no-repeat;
 	background-position: right top;
 }
@@ -309,7 +308,7 @@ div.featurebox li,
 div.featurebox_margr li {
 	font-size: 13px;
 	color: #636363;
-	background-image: url(../Assets/Images/bullet01.gif);
+	background-image: url(/Assets/Images/bullet01.gif);
 	background-repeat: no-repeat;
 	background-position: left 5px;
 	padding-left: 13px;
