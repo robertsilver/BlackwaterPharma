@@ -22,17 +22,17 @@ namespace BPBusinessEngine
 			string pathAndFile = string.Empty;
 
 			if (imageName == null)
-				return Core.AppSetting("GeneralUNC") + "/noimage.jpg";
+				return Core.AppSetting("Images.UNC") + "/noimage.jpg";
 
-			string filename = Core.AppSetting("GeneralImages") + @"\" + imageName;
+			string filename = Core.AppSetting("Images.General") + @"\" + imageName;
 
 			if (System.IO.File.Exists(filename))
 			{
-				return Core.AppSetting("GeneralUNC") + "/" + imageName;
+				return Core.AppSetting("Images.UNC") + "/" + imageName;
 			}
 			else
 			{
-				return Core.AppSetting("GeneralUNC") + "/noimage.jpg";
+				return Core.AppSetting("Images.UNC") + "/noimage.jpg";
 			}
 		}
 

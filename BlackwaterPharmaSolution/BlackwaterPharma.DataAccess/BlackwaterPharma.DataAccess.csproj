@@ -44,6 +44,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="CarouselData.cs" />
     <Compile Include="MainMenuData.cs" />
     <Compile Include="ReadJson.cs" />
     <Compile Include="RightBarData.cs" />

@@ -21,17 +21,17 @@ public class Helper
         string pathAndFile = string.Empty;
 
         if (imageName == null)
-            return AppSetting("GeneralUNC") + "/noimage.jpg";
+            return AppSetting("Images.UNC") + "/noimage.jpg";
 
-        string filename = AppSetting("GeneralImages") + @"\" + imageName;
+        string filename = AppSetting("Images.General") + @"\" + imageName;
 
         if (System.IO.File.Exists(filename))
         {
-            return AppSetting("GeneralUNC") + "/" + imageName;
+            return AppSetting("Images.UNC") + "/" + imageName;
         }
         else
         {
-            return AppSetting("GeneralUNC") + "/noimage.jpg";
+            return AppSetting("Images.UNC") + "/noimage.jpg";
         }
     }
 
