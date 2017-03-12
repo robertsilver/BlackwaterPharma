@@ -41,12 +41,6 @@
   clear: both;
 }
 
-#header1
-{
-	float: left;
-	clear: both;
-}
-
 .bar {
     background-image: url("/Assets/Images/smallbar.jpg");
     background-repeat: repeat-x;

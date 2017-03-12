@@ -31,7 +31,7 @@ body {
 	overflow: auto;
 	list-style-type: none;
 	float: left;
-	background: url("../Assets/Images/TestTabs/norm_left.gif") no-repeat left top;
+	background: url("../Images/TestTabs/norm_left.gif") no-repeat left top;
 	margin: 1px 1px 1px 1px;
 	padding: 0 0 0 9px;
 	color: White;
@@ -39,7 +39,7 @@ body {
 
 #header1 a, #header1 strong, #header1 span {
 	display: block;
-	background: url("../Assets/Images/TestTabs/norm_right.gif") no-repeat right top;
+	background: url("../Images/TestTabs/norm_right.gif") no-repeat right top;
 	/*padding:5px 15px 4px 6px;*/
 	padding: 5px 15px 4px 6px;
 	color: White;
@@ -47,11 +47,11 @@ body {
 }
 
 #header1 .current {
-	background-image: url("../Assets/Images/TestTabs/norm_left_on.gif");
+	background-image: url("../Images/TestTabs/norm_left_on.gif");
 }
 
 #header1 .current a {
-	background-image: url("../Assets/Images/TestTabs/norm_right_on.gif");
+	background-image: url("../Images/TestTabs/norm_right_on.gif");
 	padding-bottom: 5px;
 	color: Black;
 }
