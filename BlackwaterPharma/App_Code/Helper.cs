@@ -149,6 +149,19 @@ public class Helper
         return emailTemplate;
     }
 
+    public static void SaveError(string errorInFilename, string info)
+    {
+        if (AppSetting("Error.Save").ToLower() == "true")
+        {
+            var filename = AppSetting("Error.Filename");
+
+            using (var file = new StreamWriter(filename, true))
+            {
+                file.WriteLine("Date: " + DateTime.Now + ". File: " + errorInFilename + ".  Desc: " + info + "\r\n===============================================================");
+            }
+        }
+    }
+
     public static void SaveIPData(HttpRequest IPData, string pageName)
     {
         if (AppSetting("CollectIPs").ToLower() != "True".ToLower())
@@ -279,9 +292,9 @@ public class Helper
         try
         {
             // Extract all of the required settings
-            string fromMailAddress = Helper.AppSetting("FromMailAddress");
-            string emailServer = Helper.AppSetting("EmailServer");
-            int portNumber = Helper.AppSetting("EmailPort") == string.Empty ? 0 : Convert.ToInt32(Helper.AppSetting("EmailPort"));
+            string fromMailAddress = AppSetting("FromMailAddress");
+            string emailServer = AppSetting("EmailServer");
+            int portNumber = AppSetting("EmailPort") == string.Empty ? 0 : Convert.ToInt32(AppSetting("EmailPort"));
 
             MailAddress fromMail = new MailAddress(fromMailAddress);
             MailAddress toMail = new MailAddress(toAddress);
@@ -292,7 +305,7 @@ public class Helper
             if (string.Empty != customerEmail)
                 msgDetails.CC.Add(customerEmail);
 
-            string ccEmail = Helper.AppSetting("CCMailAddress");
+            string ccEmail = AppSetting("CCMailAddress");
             if (ccEmail.Contains(";"))
             {
                 string[] ccMailAddresses = ccEmail.Split(';');
@@ -304,7 +317,7 @@ public class Helper
             #endregion Add the CC mail addresses
 
             #region Add the BCC mail addresses
-            string bccEmail = Helper.AppSetting("BCCMailAddress");
+            string bccEmail = AppSetting("BCCMailAddress");
             if (bccEmail.Contains(";"))
             {
                 string[] bccMailAddresses = bccEmail.Split(';');
@@ -321,11 +334,13 @@ public class Helper
 
             // Send the email.
             client = new SmtpClient(emailServer, portNumber);
+            client.EnableSsl = false;
+            client.Credentials = new System.Net.NetworkCredential("blackhole@blackwaterpharma.co.uk", "Tengyunlian0");
             client.Send(msgDetails);
         }
         catch (Exception ex)
         {
-            throw new ApplicationException("Email not sent: " + ex.Message);
+            throw new ApplicationException("Email not sent.  Message: " + ex.Message + ".  InnerEx: " + ex.InnerException);
         }
         finally
         {

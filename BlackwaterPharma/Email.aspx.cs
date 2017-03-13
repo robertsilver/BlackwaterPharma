@@ -34,6 +34,7 @@ public partial class Email : System.Web.UI.Page
 
     protected void btnSubmit_OnClick(object sender, EventArgs e)
     {
+        btnSumbit.Enabled = false;
         this.setLabelFontsToBlack();
 
         #region Check all fields contain safe values
@@ -76,6 +77,7 @@ public partial class Email : System.Web.UI.Page
         }
         catch (Exception ex)
         {
+            Helper.SaveError("Email.aspx.cs.btnSubmit_OnClick()", ex.Message);
         }
         #endregion Replace the email tags with real values
 
@@ -88,6 +90,7 @@ public partial class Email : System.Web.UI.Page
         {
             this.lblError.Text = "There was a problem sending the order to your email address.  Please try again";
             this.lblError.Visible = true;
+            Helper.SaveError("Email.aspx.cs.btnSubmit_OnClick()", ex.Message);
         }
         #endregion Send the email
 
@@ -96,6 +99,8 @@ public partial class Email : System.Web.UI.Page
             ClientScript.RegisterClientScriptBlock(this.GetType(), "Alert", "alert('Thank you for filling out the form.  The information will now be emailed to the pharmacy.  If you have any questions, please contact the pharmacy on " + Helper.AppSetting("PharmacyTelephoneNumber") + "')", true);
             this.clearFields();
         }
+
+        btnSumbit.Enabled = false;
     }
     
     #region Private methods

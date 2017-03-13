@@ -1,4 +1,6 @@
-﻿using System;
+﻿using BlackwaterPharma.DataAccess;
+using System;
+using System.Collections.Generic;
 using System.Web.UI.WebControls;
 
 public partial class Opening : System.Web.UI.Page
@@ -9,7 +11,17 @@ public partial class Opening : System.Web.UI.Page
 
         Helper.SaveIPData(Request, "Opening.aspx");
 
-        var carouselData = BlackwaterPharma.Business.Carousel.GetAll(url);
+        var carouselData = new List<CarouselData>();
+
+        try
+        {
+            carouselData = BlackwaterPharma.Business.Carousel.GetAll(url);
+        }
+        catch (Exception ex)
+        {
+            Helper.SaveError("Opening.aspx.cs.Page_Load()", ex.Message);
+        }
+        
         Carousel.DataSource = carouselData;
         Carousel.DataBind();
     }
