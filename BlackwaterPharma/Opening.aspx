@@ -7,45 +7,29 @@
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="Server">
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder2" runat="Server">
-    <div class="carousel">
-        <div>
-            <div class="title-section">Picking up prescriptions & can't park?</div>
-            <div class="content">
-                <p class="text">
-                    We are open 100 hours every week, so why not come and pick up your prescriptions in the morning, or after dinner, when the car park is empty!
-                </p>
-                <p class="text">
-                    Opening times:<br />
-                    Monday - Saturday 7am - 10pm<br />
-                    Sunday 10am - 8pm
-                </p>
-                   <p class="text">
-                    Tel: 01621-855118
-                </p>
+    <asp:Repeater ID="Carousel" runat="server" EnableViewState="false" OnItemDataBound="Carousel_OnItemDataBound">
+        <HeaderTemplate>
+            <div class="carousel">
+        </HeaderTemplate>
+        <ItemTemplate>
+            <div>
+                <div class="title-section"><%# Eval("TitleSection") %></div>
+                <div class="content">
+                    <asp:Repeater ID="CarouselText" runat="server" EnableViewState="false">
+                        <ItemTemplate>
+                            <p class="text">
+                                <%# Container.DataItem.ToString() %>
+                            </p>
+                        </ItemTemplate>
+                    </asp:Repeater>
+                </div>
+                <div class="cf"></div>
             </div>
-            <div class="cf"></div>
-        </div>
-
-        <div>
-            <div class="title-section">Repeat Prescriptions</div>
-            <div class="content">
-                <p class="text">Why not order your repeat prescriptions, <a href="Email.aspx">here</a>, on the web site</p>
-                <p class="text">Click <a href="Email.aspx">here</a> to order your repeat prescriptions.</p>
+        </ItemTemplate>
+        <FooterTemplate>
             </div>
-            <div class="cf"></div>
-        </div>
-
-         <div>
-            <div class="title-section">Electronic Prescriptions</div>
-            <div class="content">
-                <p class="text">If you get regular prescriptions the Electronic Prescription Service (EPS) may be able to save you time by saving you unnecessary trips to your GP.</p>
-                <p class="text">EPS makes it possible for your prescriptions to be sent electronically to the pharmacy or dispenser of your choice.</p>
-                <p class="text">This means, you will no longer have to collect a paper repeat prescription from your GP practice and instead the prescription will be delivered electronically to us, here, at the pharmacy.</p>
-                <p class="text">To start this service just <a href="/Files/NHS_Electronic_Prescription_Service.pdf" target="_blank">download this form</a>, fill it in and hand it in at our pharmacy.</p>
-            </div>
-            <div class="cf"></div>
-        </div>
-    </div>
+        </FooterTemplate>
+    </asp:Repeater>
 
     <h1 class="YourPharmacyOnline">
         <span class="Your">Your</span>
@@ -115,8 +99,9 @@
             &nbsp;&bull; The NHS Direct telephone service. <strong>Call 0845 4647</strong>
         </p>
         <img src="Assets/Images/nhs-pharmacy-logo-small.gif" alt="Providing NHS Services"
-            width="62" height="70" class="logo01" /><img src="Assets/Images/nhs-services-logo-small.gif"
-                alt="NHS Services Available Here" width="140" height="70" class="logo01" />
+            width="62" height="70" class="logo01" />
+        <img src="Assets/Images/nhs-services-logo-small.gif"
+            alt="NHS Services Available Here" width="140" height="70" class="logo01" />
     </div>
 
     <script type="text/javascript">

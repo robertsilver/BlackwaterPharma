@@ -5,9 +5,6 @@ using System.Web;
 using System.Web.UI;
 using System.Web.UI.WebControls;
 using System.Text;
-using BPBusinessEngine;
-using BPDBEngine;
-using AngliaTemplate;
 
 public partial class Email : System.Web.UI.Page
 {
@@ -37,6 +34,7 @@ public partial class Email : System.Web.UI.Page
 
     protected void btnSubmit_OnClick(object sender, EventArgs e)
     {
+        btnSumbit.Enabled = false;
         this.setLabelFontsToBlack();
 
         #region Check all fields contain safe values
@@ -75,32 +73,34 @@ public partial class Email : System.Web.UI.Page
         string emailTemplate = string.Empty;
         try
         {
-            emailTemplate = BPBusinessEngine.Utility.ReplaceEmailTags(Core.AppSetting("EmailTemplatePath"), Core.AppSetting("EmailFileName"), args);
+            emailTemplate = Helper.ReplaceEmailTags(Helper.AppSetting("EmailTemplatePath"), Helper.AppSetting("EmailFileName"), args);
         }
         catch (Exception ex)
         {
-            BPBusinessEngine.Utility.SaveEvents("Email.btnSubmit_OnClick", "BPBusinessEngine.Utility.ReplaceEmailTags() returned error: " + ex.Message, "Error");
+            Helper.SaveError("Email.aspx.cs.btnSubmit_OnClick()", ex.Message);
         }
         #endregion Replace the email tags with real values
 
         #region Send the email
         try
         {
-            BPBusinessEngine.Utility.SendEmail(Core.AppSetting("PharmacyToMailAddress"), "Patient prescription request", emailTemplate, this.txtPEmail.Text);
+            Helper.SendEmail(Helper.AppSetting("PharmacyToMailAddress"), "Patient prescription request", emailTemplate, this.txtPEmail.Text);
         }
         catch (Exception ex)
         {
             this.lblError.Text = "There was a problem sending the order to your email address.  Please try again";
             this.lblError.Visible = true;
-            BPBusinessEngine.Utility.SaveEvents("Email.btnSubmit_OnCLick", "Error: " + ex.Message, "Error");
+            Helper.SaveError("Email.aspx.cs.btnSubmit_OnClick()", ex.Message);
         }
         #endregion Send the email
 
         if (!this.lblError.Visible)
         {
-            ClientScript.RegisterClientScriptBlock(this.GetType(), "Alert", "alert('Thank you for filling out the form.  The information will now be emailed to the pharmacy.  If you have any questions, please contact the pharmacy on " + Core.AppSetting("PharmacyTelephoneNumber") + "')", true);
+            ClientScript.RegisterClientScriptBlock(this.GetType(), "Alert", "alert('Thank you for filling out the form.  The information will now be emailed to the pharmacy.  If you have any questions, please contact the pharmacy on " + Helper.AppSetting("PharmacyTelephoneNumber") + "')", true);
             this.clearFields();
         }
+
+        btnSumbit.Enabled = false;
     }
     
     #region Private methods
@@ -117,28 +117,6 @@ public partial class Email : System.Web.UI.Page
         this.txtPEmail.Text = string.Empty;
         this.txtPhoneNo.Text = string.Empty;
         this.txtPrescription.Text = string.Empty;
-    }
-
-    /// <summary>
-    /// Put all of the text boxes into memory.
-    /// </summary>
-    /// <returns></returns>
-    private Tblprescriptionrequest storeRequestToMemory()
-    {
-        Tblprescriptionrequest req = new Tblprescriptionrequest();
-        req.Addressone = this.txtAddress1.Text;
-        req.Addresstwo = this.txtAddress2.Text;
-        req.City = this.txtCity.Text;
-        req.County = this.txtCounty.Text;
-        req.Fname = this.txtFName.Text;
-        req.Insertdt = DateTime.Now;
-        req.Lname = this.txtLName.Text;
-        req.Pcode = this.txtPCode.Text.ToUpper();
-        req.Pemail = this.txtPEmail.Text;
-        req.Phoneno = this.txtPhoneNo.Text;
-        req.Prescriptionrequest = this.txtPrescription.Text;
-
-        return req;
     }
 
     /// <summary>
@@ -270,7 +248,7 @@ public partial class Email : System.Web.UI.Page
         if (!Helper.IsUserValueSafe(txtPEmail.Text, this.txtPEmail.MaxLength))
             return FieldContainingError.PatientEmail;
 
-        if (string.Empty != this.txtPEmail.Text && !Core.ValidEmail(txtPEmail.Text))
+        if (string.Empty != this.txtPEmail.Text && !Helper.ValidEmail(txtPEmail.Text))
             return FieldContainingError.IncorrectEmailFormat;
 
         if (!Helper.IsUserValueSafe(this.txtPrescription.Text, this.txtPrescription.MaxLength))

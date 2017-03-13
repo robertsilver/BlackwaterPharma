@@ -22,20 +22,17 @@ namespace BPBusinessEngine
 			string pathAndFile = string.Empty;
 
 			if (imageName == null)
-				return Core.AppSetting("GeneralUNC") + "/noimage.jpg";
+				return Core.AppSetting("Images.UNC") + "/noimage.jpg";
 
-			string filename = Core.AppSetting("GeneralImages") + @"\" + imageName;
-			Utility.SaveEvents("Utility.DisplayProductImages", "Variable, filename = " + filename, "Debug");
+			string filename = Core.AppSetting("Images.General") + @"\" + imageName;
 
 			if (System.IO.File.Exists(filename))
 			{
-				Utility.SaveEvents("Utility.DisplayProductImages", Core.AppSetting("GeneralUNC") + "/" + imageName, "Debug");
-				return Core.AppSetting("GeneralUNC") + "/" + imageName;
+				return Core.AppSetting("Images.UNC") + "/" + imageName;
 			}
 			else
 			{
-				Utility.SaveEvents("Utility.DisplayProductImages", Core.AppSetting("GeneralUNC") + "/noimage.jpg", "Debug");
-				return Core.AppSetting("GeneralUNC") + "/noimage.jpg";
+				return Core.AppSetting("Images.UNC") + "/noimage.jpg";
 			}
 		}
 
@@ -291,7 +288,6 @@ namespace BPBusinessEngine
             }
             catch (Exception ex)
             {
-                SaveEvents("BPBusinessEngine.SendEmail", "client.Send() returned error: " + ex.Message, "Error");
                 throw new ApplicationException("Email not sent: " + ex.Message);
             }
             finally

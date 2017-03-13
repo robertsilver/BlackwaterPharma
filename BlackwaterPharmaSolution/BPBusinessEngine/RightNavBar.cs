@@ -19,7 +19,6 @@ namespace BPBusinessEngine
 			}
 			catch (Exception ex)
 			{
-				Utility.SaveEvents("RightBarNav.GetMainMenu", "navBar.AddRange(navAgg.GetAllForHomePage()) returned error: " + ex.Message, "Error");
 				throw new ApplicationException("There was a problem retrieving the right navigation.  Error: " + ex.Message);
 			}
 			finally
@@ -44,7 +43,6 @@ namespace BPBusinessEngine
 			}
 			catch (Exception ex)
 			{
-				Utility.SaveEvents("RightBarNav.GetOneRecord", "navAgg.GetSingle() returned error: " + ex.Message, "Error");
 				throw new ApplicationException("There was a problem retrieving the right navigation.  Error: " + ex.Message);
 			}
 			finally

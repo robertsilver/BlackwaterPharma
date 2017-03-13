@@ -1,0 +1,72 @@
+﻿[
+    {
+        "ID": 1,
+        "Name": "",
+        "HeaderText": "Visited Us Recently?",
+        "BodyText": "Please complete our online questionnaire ... It only takes a few minutes! Click <a href=\"/Files/PatientQuestionnaire.pdf\" target=\"_blank\"> here</a> to download",
+        "Image": "person-with-clipboard.jpg",
+        "AltText": "Visited us recently",
+        "Width": 70,
+        "Height": 92,
+        "ShowOnHomepage": "Y",
+        "Weight": 0,
+        "CategoryIDs": "",
+        "URL": ""
+    },
+    {
+        "ID": 2,
+        "Name": "",
+        "HeaderText": "Want to Give Up Smoking ?",
+        "BodyText": "Giving up smoking requires willpower and determination and you will need advice on the range of support available so Please Ask Us - We will be with you every step of the way.",
+        "Image": "stop_smoking02.jpg",
+        "AltText": "Stop smoking",
+        "Width": 97,
+        "Height": 60,
+        "ShowOnHomepage": "Y",
+        "Weight": 1,
+        "CategoryIDs": "",
+        "URL": "~/Consultations.aspx#smoke"
+    },
+    {
+        "ID": 3,
+        "Name": "",
+        "HeaderText": "Prescriptions :: Home Delivery",
+        "BodyText": "We offer a Repeat Prescription Service from all local surgeries  plus FREE delivery service when required.",
+        "Image": "",
+        "AltText": "",
+        "Width": null,
+        "Height": null,
+        "ShowOnHomepage": "Y",
+        "Weight": 2,
+        "CategoryIDs": "",
+        "URL": "services.aspx#homedel"
+    },
+    {
+        "ID": 4,
+        "Name": "",
+        "HeaderText": "Free:: NHS Medicines Review",
+        "BodyText": "Medicines Review Patients with long-term conditions can have a free annual Medicines Review. Please Ask for Details.",
+        "Image": "medi-review.jpg",
+        "AltText": "Medical review",
+        "Width": 88,
+        "Height": 61,
+        "ShowOnHomepage": "Y",
+        "Weight": 3,
+        "CategoryIDs": "",
+        "URL": "consultations.aspx#medrev"
+    },
+    {
+        "ID": 5,
+        "Name": "",
+        "HeaderText": "Out of Date Medicines",
+        "BodyText": "Do you have old medicines at home that need to be returned to the Pharmacy?",
+        "Image": "",
+        "AltText": "",
+        "Width": null,
+        "Height": null,
+        "ShowOnHomepage": "Y",
+        "Weight": 4,
+        "CategoryIDs": "",
+        "URL": "~/Medicine_Old_Returnof02.aspx"
+    }
+]
