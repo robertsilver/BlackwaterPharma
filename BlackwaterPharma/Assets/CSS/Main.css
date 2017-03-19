@@ -226,7 +226,7 @@ li.altcolor {
 /* END - Opening.aspx */
 
 /* START - Services.aspx */
-
+.services {font-size: 18px;}
 .PatientAndCustomerServices, .ReturningYourUnwantedMedicinesHeader, .ReturningYourUnwantedMedicines, 
 .ReturningYourUnwantedMedicinesTwoHeader, .MedicineStorage, .Introduction, 
 .HealthLinksHeader, .HealthSelfHelpHeader, .Consultations_MoreInfoHeader,
@@ -285,7 +285,7 @@ div.featurebox_margr .fontred {
 }
 div.featurebox p, 
 div.featurebox_margr p {
-	font-size: 13px;
+	font-size: 15px;
 	margin-top: 0px;
 	margin-bottom: 5px;
 	line-height: 16px;
@@ -300,7 +300,7 @@ div.featurebox_margr ul {
 }
 div.featurebox li,
 div.featurebox_margr li {
-	font-size: 13px;
+	font-size: 15px;
 	color: #636363;
 	background-image: url(/Assets/Images/bullet01.gif);
 	background-repeat: no-repeat;
@@ -312,7 +312,7 @@ div.featurebox_margr li {
 
 table.tabType01,
 table.tabType02 {
-	font-size: 13px;
+	font-size: 15px;
 	color: #636363;
 	border: solid 1px #99CC99;
 	width: 95%;
@@ -406,3 +406,5 @@ table.tabType02 td.noborder {
         content: '';
     }
 /* Carousel end */
+
+.find-us, .email-prescriptions, .health-home, .health-links {font-size: 18px;}
