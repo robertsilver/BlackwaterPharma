@@ -3,3 +3,11 @@ obj/
 *.suo
 *.user
 *.pubxml
+BlackwaterPharmaSolution/.vs/BlackwaterPharma/v15/Server/sqlite3/db.lock
+BlackwaterPharmaSolution/.vs/BlackwaterPharma/v15/Server/sqlite3/storage.ide
+BlackwaterPharmaSolution/.vs/BlackwaterPharma/v15/Server/sqlite3/storage.ide-shm
+BlackwaterPharmaSolution/.vs/BlackwaterPharma/v15/Server/sqlite3/storage.ide-wal
+BlackwaterPharmaSolution/.vs/config/applicationhost.config
+BlackwaterPharmaSolution/.vs/config/applicationhost.config
+*.config
+BlackwaterPharmaSolution/.vs/config/applicationhost.config
