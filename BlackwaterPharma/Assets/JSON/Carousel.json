@@ -1,32 +1,50 @@
 ﻿[
-    {
-        "TitleSection": "Picking up prescriptions & can't park?",
-        "DateStart": "2017-01-01 00:00:00",
-        "DateEnd": "2025-12-31 23:59:59",
-        "CarouselText": [
-            " We are open 100 hours every week, so why not come and pick up your prescriptions in the morning, or after dinner, when the car park is empty!",
-            "Opening times:<br />Monday - Saturday 7am - 10pm<br />Sunday 10am - 8pm",
-            "Tel: 01621-855118"
-        ]
-    },
-    {
-        "TitleSection": "Repeat Prescriptions",
-        "DateStart": "2017-01-01 00:00:00",
-        "DateEnd": "2025-12-31 23:59:59",
-        "CarouselText": [
-            "Why not order your repeat prescriptions, <a href='Email.aspx'>here</a>, on the web site",
-            "Click <a href='Email.aspx'>here</a> to order your repeat prescriptions."
-        ]
-    },
-    {
-        "TitleSection": "Electronic Prescriptions",
-        "DateStart": "2017-01-01 00:00:00",
-        "DateEnd": "2025-12-31 23:59:59",
-        "CarouselText": [
-            "If you get regular prescriptions the Electronic Prescription Service (EPS) may be able to save you time by saving you unnecessary trips to your GP.",
-            "EPS makes it possible for your prescriptions to be sent electronically to the pharmacy or dispenser of your choice.",
-            "This means, you will no longer have to collect a paper repeat prescription from your GP practice and instead the prescription will be delivered electronically to us, here, at the pharmacy.",
-            "To start this service just <a href='/Files/NHS_Electronic_Prescription_Service.pdf' target='_blank'>download this form</a>, fill it in and hand it in at our pharmacy."
-        ]
-    }
+  {
+    "TitleSection": "Blackwater Medical Centre is offering an Extended Hours service to all NHS patients.",
+    "DateStart": "2018-10-31 00:00:00",
+    "DateEnd": "2025-12-31 23:59:59",
+    "CarouselText": [
+      "People can book through their own surgery receptionist or via the 111 service. It is not a walk in centre, but patients have to pre-book.",
+      "The hours are Monday to Friday 6pm-8.30pm and Saturday and Sunday 8am-2pm",
+      "Blackwater Pharmacy is on site to dispense prescriptions for this service."
+    ]
+  },
+  {
+    "TitleSection": "Dr Geramayeh has started an aesthetics clinic in the surgery",
+    "DateStart": "2018-10-31 00:00:00",
+    "DateEnd": "2025-12-31 23:59:59",
+    "CarouselText": [
+      "Click <a href='https://www.cosmeticsfacial.com' target='_blank'>here</a> to find out more."
+    ]
+  },
+  {
+    "TitleSection": "Picking up prescriptions & can't park?",
+    "DateStart": "2017-01-01 00:00:00",
+    "DateEnd": "2025-12-31 23:59:59",
+    "CarouselText": [
+      " We are open 100 hours every week, so why not come and pick up your prescriptions in the morning, or after dinner, when the car park is empty!",
+      "Opening times:<br />Monday - Saturday 7am - 10pm<br />Sunday 10am - 8pm",
+      "Tel: 01621-855118"
+    ]
+  },
+  {
+    "TitleSection": "Repeat Prescriptions",
+    "DateStart": "2017-01-01 00:00:00",
+    "DateEnd": "2025-12-31 23:59:59",
+    "CarouselText": [
+      "Why not order your repeat prescriptions, <a href='Email.aspx'>here</a>, on the web site",
+      "Click <a href='Email.aspx'>here</a> to order your repeat prescriptions."
+    ]
+  },
+  {
+    "TitleSection": "Electronic Prescriptions",
+    "DateStart": "2017-01-01 00:00:00",
+    "DateEnd": "2025-12-31 23:59:59",
+    "CarouselText": [
+      "If you get regular prescriptions the Electronic Prescription Service (EPS) may be able to save you time by saving you unnecessary trips to your GP.",
+      "EPS makes it possible for your prescriptions to be sent electronically to the pharmacy or dispenser of your choice.",
+      "This means, you will no longer have to collect a paper repeat prescription from your GP practice and instead the prescription will be delivered electronically to us, here, at the pharmacy.",
+      "To start this service just <a href='/Files/NHS_Electronic_Prescription_Service.pdf' target='_blank'>download this form</a>, fill it in and hand it in at our pharmacy."
+    ]
+  }
 ]
