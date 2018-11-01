@@ -10,7 +10,7 @@
     ]
   },
   {
-    "TitleSection": "Dr Geramayeh has started an aesthetics clinic in the surgery",
+    "TitleSection": "Dr Geramayeh has started an aesthetics clinic in this premises.",
     "DateStart": "2018-10-31 00:00:00",
     "DateEnd": "2025-12-31 23:59:59",
     "CarouselText": [
@@ -44,7 +44,7 @@
       "If you get regular prescriptions the Electronic Prescription Service (EPS) may be able to save you time by saving you unnecessary trips to your GP.",
       "EPS makes it possible for your prescriptions to be sent electronically to the pharmacy or dispenser of your choice.",
       "This means, you will no longer have to collect a paper repeat prescription from your GP practice and instead the prescription will be delivered electronically to us, here, at the pharmacy.",
-      "To start this service just <a href='/Files/NHS_Electronic_Prescription_Service.pdf' target='_blank'>download this form</a>, fill it in and hand it in at our pharmacy."
+      "To start this service just <a href='/Files/NHS_Electronic_Prescription_Service.doc' target='_blank'>download this form</a>, fill it in and hand it in at our pharmacy."
     ]
   }
 ]

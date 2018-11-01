@@ -6,8 +6,14 @@
 <asp:Content ID="Content2" ContentPlaceHolderID="head" runat="Server">
     <link rel="stylesheet" type="text/css" href="Assets/CSS/Email.css" />
 </asp:Content>
+
 <asp:Content ID="Content3" ContentPlaceHolderID="ContentPlaceHolder2" runat="Server">
     <div class="email-prescriptions">
+        <div style="font-size: 120%; margin-bottom: 30px; border: 1px solid black;">
+            Dr Geramayeh has started an aesthetics clinic in this premises
+             <br />
+            Click <a href='https://www.cosmeticsfacial.com' target='_blank'>here</a> to find out more.
+        </div>
         <asp:Label ID="lblMessage" runat="server" Text="Welcome to Blackwater Pharmacy's repeat prescription.  Please fill out the form below with, requesting your repeat prescription, and we will do our best to fullfil it.  Thank you." /><br />
         <asp:Label ID="lblError" runat="server" ForeColor="Red" Font-Bold="true" /><br />
         <asp:Label ID="lblUnsafeValues" runat="server" ForeColor="Red" Font-Bold="true" Visible="false"
